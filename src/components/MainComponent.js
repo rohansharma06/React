@@ -30,11 +30,7 @@ const mapDispatchToProps = (dispatch) => ({
   postFeedback: (feedback) => dispatch(postFeedback(feedback))
 });
 
-class Main extends Component{
-  constructor(props) {
-    super(props);
-  }  
-
+class Main extends Component{ 
   componentDidMount() {
     this.props.fetchDishes();
     this.props.fetchLeaders();
